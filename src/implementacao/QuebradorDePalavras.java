@@ -20,12 +20,8 @@ public class QuebradorDePalavras {
 		return this.contadores.get(keyContador).getContagem();
 	}
 
-	public Map<String, ContadorPalavras> getContadores() {
-		return contadores;
+	public void adicionarContador(String nome, ContadorPalavras contador) {
+		contadores.put(nome, contador);
 	}
 
-	public void setContadores(Map<String, ContadorPalavras> contadores) {
-		this.contadores = contadores;
-	}
-	
 }

@@ -16,9 +16,9 @@ public class Main {
 		ContadorPalavras contadorMaiusculas = new ContadorMaiusculas();
 		ContadorPalavras contadorPares = new ContadorPares();
 		
-		quebrador.getContadores().put("SIMPLES", contadorSimples);
-		quebrador.getContadores().put("MAISCULAS", contadorMaiusculas);
-		quebrador.getContadores().put("PARES", contadorPares);
+		quebrador.adicionarContador("SIMPLES", contadorSimples);
+		quebrador.adicionarContador("MAISCULAS", contadorMaiusculas);
+		quebrador.adicionarContador("PARES", contadorPares);
 		
 		quebrador.quebrar("Recursão ver recursividade Recursividade se ainda não entendeu ver Recursão");
 
