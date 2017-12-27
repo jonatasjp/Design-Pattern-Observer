@@ -8,7 +8,7 @@ import implementacao.QuebradorDePalavras;
 
 public class Main {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		QuebradorDePalavras quebrador = new QuebradorDePalavras();
 		
@@ -17,13 +17,13 @@ public class Main {
 		ContadorPalavras contadorPares = new ContadorPares();
 		
 		quebrador.adicionarContador("SIMPLES", contadorSimples);
-		quebrador.adicionarContador("MAISCULAS", contadorMaiusculas);
+		quebrador.adicionarContador("MAIUSCULAS", contadorMaiusculas);
 		quebrador.adicionarContador("PARES", contadorPares);
 		
 		quebrador.quebrar("Recursão ver recursividade Recursividade se ainda não entendeu ver Recursão");
-
+		
 		System.out.println("Simples: " +quebrador.getContagem("SIMPLES"));
-		System.out.println("Maisculas: " +quebrador.getContagem("MAISCULAS"));
+		System.out.println("Maisculas: " +quebrador.getContagem("MAIUSCULAS"));
 		System.out.println("Pares: " +quebrador.getContagem("PARES"));
 		
 	}
